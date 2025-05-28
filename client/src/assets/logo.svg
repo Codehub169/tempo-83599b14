@@ -1,0 +1,24 @@
+<svg viewBox=\"0 0 200 50\" xmlns=\"http://www.w3.org/2000/svg\" aria-label=\"hueneu logo\">
+  <style>
+    .logo-text-hue {
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      fill: #FFD700; /* Warm Gold - var(--color-accent-1) */
+    }
+    .logo-text-neu {
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      fill: #D3D3D3; /* Light Grey - var(--color-text) */
+    }
+  </style>
+  <text x=\"10\" y=\"35\">
+    <tspan class=\"logo-text-hue\">hue</tspan><tspan class=\"logo-text-neu\">neu</tspan>
+  </text>
+  <!-- Optional: Small accent dots like favicon if desired -->
+  <!-- Example dot using accent color 2 -->
+  <!-- <circle cx=\"140\" cy=\"15\" r=\"3\" fill=\"#5F9EA0\" /> -->
+  <!-- Example dot using accent color 3 -->
+  <!-- <circle cx=\"150\" cy=\"15\" r=\"3\" fill=\"#DDA0DD\" /> -->
+</svg>

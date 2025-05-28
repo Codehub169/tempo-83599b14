@@ -1,0 +1,29 @@
+{
+  "name": "hueneu-website",
+  "version": "1.0.0",
+  "description": "One-page responsive website for hueneu graphic design studio.",
+  "main": "server/index.js",
+  "scripts": {
+    "start:server": "node server/index.js",
+    "dev:server": "nodemon server/index.js",
+    "install:client": "cd client && npm install",
+    "build:client": "cd client && npm run build",
+    "start:client": "cd client && npm start",
+    "start": "npm run start:server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run start:client\"",
+    "heroku-postbuild": "npm run install:client && npm run build:client"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

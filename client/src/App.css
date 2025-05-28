@@ -1,0 +1,77 @@
+/* Global Styles for hueneu website */
+
+/* Apply a natural box layout model to all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Default body font */
+  background-color: #1A1A1A; /* Deep Charcoal background */
+  color: #D3D3D3; /* Light Grey text */
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto; /* Allow vertical scroll for the page content */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; /* Heading font */
+  color: #FFFFFF; /* Slightly brighter for headings, or use accents */
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+/* Links */
+a {
+  color: #FFD700; /* Warm Gold accent for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #DDA0DD; /* Soft Plum accent on hover */
+}
+
+/* Utility class for screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Basic responsive container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Define accent colors as CSS variables for easy reuse */
+:root {
+  --color-background: #1A1A1A;
+  --color-text: #D3D3D3;
+  --color-accent1: #FFD700; /* Warm Gold */
+  --color-accent2: #5F9EA0; /* Muted Teal */
+  --color-accent3: #DDA0DD; /* Soft Plum */
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}

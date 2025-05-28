@@ -1,0 +1,173 @@
+/* Styles for the Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: var(--color-background);
+  text-align: center;
+  color: var(--color-text);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-section h2 {
+  font-family: var(--font-primary);
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.contact-section .section-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: var(--color-text-muted, #aaa); /* Assuming a muted text color variable or fallback */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--color-background-secondary);
+  padding: 40px;
+  border-radius: 12px; /* 2xl in Tailwind is often 1rem, using a slightly larger value for 'note' feel */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input[type=\"text\"],
+.form-group input[type=\"email\"],
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type=\"text\"]:focus,
+.form-group input[type=\"email\"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-1);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3); /* Warm Gold focus ring */
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-background);
+  background-color: var(--color-accent-1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.submit-btn:hover {
+  background-color: #ffd700; /* Slightly lighter gold on hover or keep same if pure gold */
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.status-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: rgba(95, 158, 160, 0.2); /* Muted Teal background */
+  color: var(--color-accent-2);
+  border: 1px solid var(--color-accent-2);
+}
+
+.status-message.error {
+  background-color: rgba(221, 160, 221, 0.2); /* Soft Plum background */
+  color: var(--color-accent-3);
+  border: 1px solid var(--color-accent-3);
+}
+
+.instagram-link {
+  margin-top: 40px;
+  display: block;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--color-accent-2); /* Muted Teal for link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: var(--color-accent-1); /* Warm Gold on hover */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2.4rem;
+  }
+  .contact-form-container {
+    padding: 30px;
+  }
+  .form-group input[type=\"text\"],
+  .form-group input[type=\"email\"],
+  .form-group textarea {
+    padding: 12px;
+  }
+  .submit-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+   .contact-section .section-subtitle {
+    font-size: 1rem;
+  }
+  .contact-form-container {
+    padding: 20px;
+  }
+}

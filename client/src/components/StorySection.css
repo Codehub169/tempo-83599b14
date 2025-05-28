@@ -1,0 +1,114 @@
+/* Styles for the StorySection component */
+.story-section {
+  padding: 5rem 2rem; /* Ample padding for a spacious feel */
+  background-color: var(--color-background-secondary, #222222); /* Slightly different from main for contrast if needed, else use var(--color-background) */
+  color: var(--color-text);
+  text-align: center;
+  border-top: 1px solid var(--color-accent1-translucent, rgba(255, 215, 0, 0.2)); /* Subtle separator */
+  border-bottom: 1px solid var(--color-accent1-translucent, rgba(255, 215, 0, 0.2));
+}
+
+.story-section .section-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem; /* Responsive font size */
+  color: var(--color-text);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.story-section .section-title .highlight-hue {
+  color: var(--color-accent1);
+  font-style: italic;
+}
+
+.story-content p {
+  font-family: var(--font-body);
+  font-size: 1.15rem; /* Responsive font size */
+  line-height: 1.8;
+  color: var(--color-text-muted, #b0b0b0);
+  max-width: 700px; /* Optimal reading width */
+  margin: 0 auto 1.5rem auto; /* Centered paragraphs */
+}
+
+.story-content .highlight-hue,
+.story-content .highlight-neu {
+  font-weight: 600;
+}
+
+.story-content .highlight-hue {
+  color: var(--color-accent2); /* Using a different accent for variety */
+}
+
+.story-content .highlight-neu {
+  color: var(--color-accent3); /* And another one */
+}
+
+/* Styling for the "Who Knew?" moment */
+.who-knew-moment {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.03); /* Very subtle background difference */
+  border-radius: var(--border-radius-2xl, 16px);
+  border-left: 4px solid var(--color-accent1);
+  display: inline-block; /* So it doesn't take full width unless content pushes it */
+  max-width: 650px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.who-knew-pop {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent1);
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.who-knew-text {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .story-section {
+    padding: 4rem 1.5rem;
+  }
+  .story-section .section-title {
+    font-size: 2.4rem;
+  }
+  .story-content p {
+    font-size: 1.1rem;
+  }
+  .who-knew-pop {
+    font-size: 2.2rem;
+  }
+  .who-knew-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-section {
+    padding: 3rem 1rem;
+  }
+  .story-section .section-title {
+    font-size: 2rem;
+  }
+  .story-content p {
+    font-size: 1rem;
+  }
+  .who-knew-moment {
+    padding: 1.5rem;
+  }
+  .who-knew-pop {
+    font-size: 1.8rem;
+  }
+  .who-knew-text {
+    font-size: 0.95rem;
+  }
+}
